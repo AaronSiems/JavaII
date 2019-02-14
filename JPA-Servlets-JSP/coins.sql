@@ -28,7 +28,7 @@ CREATE TABLE `coins` (
   `YEAR` int(11) NOT NULL,
   `MINT` varchar(2) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `coins` (
 
 LOCK TABLES `coins` WRITE;
 /*!40000 ALTER TABLE `coins` DISABLE KEYS */;
-INSERT INTO `coins` VALUES (1,'Quarter',2018,'P'),(2,'Dime',1964,'D'),(3,'Nickel',1942,'P'),(4,'Penny',1918,'S');
+INSERT INTO `coins` VALUES (1,'Quarter',2018,'P'),(2,'Dime',1964,'D'),(3,'Nickel',1942,'P'),(4,'Penny',1918,'S'),(11,'Half Penny',1910,'P');
 /*!40000 ALTER TABLE `coins` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-30 17:57:39
+-- Dump completed on 2019-02-13 18:48:19
