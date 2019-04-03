@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert New Contact</title>
+</head>
+<body>
+	<form th:object="${newCoin}" th:action="@{/addCoin}" method='POST'>
+
+		
+		Coin: <input name="coin" size="20"> <br /> 
+		Year: <input name="year" size="10"><br /> 
+		Mint: <input name="mint" size="20"><br /> 
+		<input name="submit" type="submit" value="submit" />
+
+	</form>
+	<a href="viewAll">View all coins</a>
+</body>
+</html>

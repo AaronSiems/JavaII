@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>View All Coins</title>
+</head>
+<body>
+	<form>
+		<table>
+			<tr th:each="currentCoin : ${coins}">
+				<td th:text="${currentCoin.id}" />
+				<td th:text="${currentCoin.coin}" />
+				<td th:text="${currentCoin.year}" />
+				<td th:text="${currentCoin.mint}" />
+				<td><a th:href="@{/edit/{id}(id=${currentCoin.id})}">Edit</a></td>
+				<td><a th:href="@{/delete/{id}(id=${currentCoin.id})}">Delete</a></td>
+			</tr>
+		</table>
+	</form>
+	<a href="../addCoin">Add a new coin</a>
+</body>
+</html>

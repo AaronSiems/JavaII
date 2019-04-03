@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Update Contact</title>
+</head>
+<body>
+<form action="#" th:action="@{/update/{id}(id=${coin.id})}" th:object="${coin}" method="post">
+    <label for="coin">Coin</label>
+    <input type="text" th:field="*{coin}" id="coin" placeholder="Coin">
+    <span th:if="${#fields.hasErrors('coin')}" th:errors="*{coin}"></span>
+    
+    <label for="year">Year</label>
+    <input type="text" th:field="*{year}" id="year" placeholder="Year">
+    <span th:if="${#fields.hasErrors('year')}" th:errors="*{year}"></span>
+    
+    <label for="mint">Mint</label>
+    <input type="text" th:field="*{mint}" id="mint" placeholder="mint">
+    <span th:if="${#fields.hasErrors('mint')}" th:errors="*{mint}"></span>    
+    
+    <input type="submit" value="Update Coin">   
+</form>
+</body>
+</html>
